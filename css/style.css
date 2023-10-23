@@ -6,6 +6,8 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: yellowgreen;
 }
 
@@ -13,16 +15,16 @@ a {
     text-decoration: none;
 }
 
+
+
 /* settaggio header  */
 
 .headerformat {
-    height: 60px;
-    width: 100vw;
     background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 10px;
 }
 
 .headerbox {
@@ -43,4 +45,46 @@ a {
     background-color: #0061ff;
     color: white;
     border: none;
+}
+
+/* settaggio row e column funzioni flex */
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+/* article sezione introduttiva */
+.introduction .column {
+    justify-content: center;
+}
+
+/* settaggio sections */
+
+.sect {
+    width: 100vw;
+}
+
+#blue,
+.sect {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    background-color: #b5d0e6;
+}
+
+#white,
+.sect {
+    background-color: white;
+}
+
+
+/* settaggio footer */
+
+.footerformat {
+    background-color: black;
+    height: 200px;
+    width: 100vw;
 }
