@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    height: auto;
+    font-family: 'Open Sans';
+    box-sizing: border-box;
+}
+
+body {
+    background-color: yellowgreen;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* settaggio header  */
+
+.headerformat {
+    height: 60px;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.headerbox {
+    justify-content: space-evenly;
+}
+
+.headerbox a {
+    color: black;
+}
+
+.headerbox .bgblue_button {
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+/* SETTAGGIO BOTTONE BLU RIUTILIZZATO */
+.bgblue_button {
+    background-color: #0061ff;
+    color: white;
+    border: none;
+}
