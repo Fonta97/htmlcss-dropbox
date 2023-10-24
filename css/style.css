@@ -1,11 +1,11 @@
 * {
     margin: 0;
-    height: auto;
     font-family: 'Open Sans';
     box-sizing: border-box;
 }
 
 body {
+    width: auto;
     display: flex;
     flex-direction: column;
     background-color: yellowgreen;
@@ -25,6 +25,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    height: 60px;
 }
 
 .headerbox {
@@ -47,36 +48,87 @@ a {
     border: none;
 }
 
-/* settaggio row e column funzioni flex */
+/* settaggio .row e .column DEBUG  */
 .row {
+    display: flex;
     flex-direction: row;
 }
 
 .column {
+    display: flex;
     flex-direction: column;
 }
 
+/* DEBUG FINE  */
+
 /* article sezione introduttiva */
-.introduction .column {
+
+.introd_art {
+    display: flex;
     justify-content: center;
+    padding: 50px 5px 10px;
+}
+
+.introd_column {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: ;
+}
+
+.introd_column h1 {
+    display: flex;
+    font-weight: bolder;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.introd_row .introd_column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.introd_column .bgblue_button {
+    padding: 10px 3px;
+    width: 85%;
+}
+
+.introd_column img {
+    max-width: 70%;
+}
+
+.introd_row {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+}
+
+/* article sezione business etc.  */
+
+.introd_column h1 {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 30px;
+    padding-bottom: 20px;
 }
 
 /* settaggio sections */
 
-.sect {
-    width: 100vw;
-}
-
-#blue,
-.sect {
+.sect_blue {
+    width: 100%;
     display: flex;
     justify-content: center;
-    height: 600px;
+    flex-direction: column;
     background-color: #b5d0e6;
 }
 
-#white,
-.sect {
+.sect_white {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: white;
 }
 
@@ -86,5 +138,5 @@ a {
 .footerformat {
     background-color: black;
     height: 200px;
-    width: 100vw;
+    width: 100%;
 }
